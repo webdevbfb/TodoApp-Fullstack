@@ -1,11 +1,10 @@
 import express from 'express';
 import cors from 'cors';
-import bodyParser from 'body-parser';
 
 const app = express();
 
 app.use(cors());
-app.use(bodyParser.json()); // Zum Verarbeiten von JSON-Body-Daten
+app.use(express.json()); // Zum Verarbeiten von JSON-Body-Daten
 
 let todos = [
   { id: 1, title: 'Learn React', completed: false },
