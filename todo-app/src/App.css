@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f8fa;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e3e8;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Todo List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e1e3e8;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+li:hover {
+  background-color: #f0f2f5;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+/* Buttons */
+button {
+  margin-left: 5px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+button.delete {
+  background-color: #e74c3c;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+}
+
+/* Input Field */
+input {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #e1e3e8;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
